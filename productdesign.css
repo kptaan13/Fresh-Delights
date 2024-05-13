@@ -1,0 +1,184 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f8f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #325033;
+    padding: 20px 0;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    flex: 0 0 auto;
+    margin-left: 30px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.header-content {
+    flex: 1;
+}
+
+header h1 {
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Main */
+main {
+    padding: 20px 0;
+}
+
+.product-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.product-image {
+    flex: 0 0 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.product-image img {
+    width: 70%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.product-description {
+    flex: 0 0 40%;
+    margin: 5px;
+}
+
+.product-description h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center; /* Horizontally center the text */
+    font-weight: bold; /* Make the text bold */
+    font-family: "Times New Roman", Times, serif; /* Use a serif font for a classy look */
+    color: #333; /* Set the text color */
+    text-transform: uppercase; /* Convert text to uppercase for a royal look */
+    text-decoration: underline;
+}
+
+
+.product-description p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.order-now {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.order-now a {
+    padding: 10px 20px;
+    background-color: #325033;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.order-now a:hover {
+    background-color: #2a442a;
+}
+
+/* Footer */
+footer {
+    background-color: #325033;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Add this CSS to hide the quantity selector initially */
+.quantity-selector.hidden {
+    display: none;
+}
+/* productdesign.css */
+
+/* Add this to initially hide the quantity selector */
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantity-selector span {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.quantity-dropdown {
+    padding: 10px;
+    border: 2px solid #325033;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.done {
+    padding: 10px 20px;
+    background-color: #325033;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.done:hover {
+    background-color: #2a442a;
+}
+
+/* Add this to ensure the "Order Now" button is visible */
+.order-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #325033;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #2a442a;
+    transform: translateY(-3px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

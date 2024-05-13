@@ -1,0 +1,251 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f3f8f0; /* Updated background color to a light cream */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+}
+
+/* Header */
+header {
+    background-color: #325033; /* Updated header background color to forest green */
+    padding: 20px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo-container {
+    margin-left: 20px; /* Add space between the menu button and the logo */
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.header-content {
+    flex: 1;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 5px; /* Adjusted margin to move the welcome line up */
+    color: #fff; /* Updated header text color to white */
+}
+
+header p {
+    font-size: 18px;
+    color: #ddd; /* Updated header text color to a lighter shade of white */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 2px solid #325033; /* Use forest green color for the border */
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    width: 200px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #325033; /* Use forest green color for the background */
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #2a442a; /* Darken the background color on hover */
+}
+
+/* Main Content */
+section {
+    margin-top: 40px;
+}
+
+section h2.text-center {
+    text-align: center; /* Center align category headings */
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Classy font for categories */
+    border-bottom: 2px solid #325033; /* Add underline to category headings */
+    padding-bottom: 10px; /* Add some space between text and underline */
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    flex: 0 0 calc(20% - 20px);
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.product p {
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+/* Recipes */
+#recipes {
+    background-color: #fff9e6; /* Creamy background for recipes */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px; /* Adjusted margin to separate the recipes section from the previous sections */
+}
+
+#recipes h2.text-center {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Classy font for recipe heading */
+    /* background-color: #f3dd95; Creamy background for recipe heading */
+    padding: 10px; /* Add padding to the recipe heading */
+    border-radius: 8px; /* Add border radius to the recipe heading */
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recipe {
+    flex: 0 0 calc(30% - 20px);
+    margin: 10px;
+    text-align: center;
+    background-color: #fff; /* Ensure individual recipe cards have white background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.recipe:hover {
+    transform: translateY(-5px);
+}
+
+.recipe img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.recipe h3 {
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+.recipe p {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.product-link {
+    text-decoration: none; /* Remove default underline */
+    color: inherit; /* Inherit color from parent */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.product-link:hover {
+    text-decoration: none; /* Add underline on hover */
+}
+
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    background-color: #325033; /* Updated footer background color to forest green */
+    color: #fff; /* Updated footer text color to white */
+    padding: 20px 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+.menu-container {
+    margin-left: 20px; /* Adjust the distance from the left */
+}
+
+.menu-btn {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 30px;
+    background-color: transparent;
+    color: #fff; /* Adjust the color of the menu button */
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide the sidebar off-screen initially */
+    width: 250px;
+    height: 100%;
+    background-color: #d0edc1; /* Sidebar background color */
+    z-index: 1000; /* Ensure the sidebar is above other content */
+    transition: left 0.3s ease; /* Smooth transition effect */
+}
+
+.sidebar.show {
+    left: 0; /* Show the sidebar when the show class is applied */
+}
+
+.sidebar-content {
+    padding: 60px;
+}
+
+.sidebar a {
+    margin: 20px;
+    display: block;
+    margin-bottom: 10px;
+    color: #130404; /* Adjust the color of the sidebar links */
+    text-decoration: none;
+    font-size: 20px;
+}

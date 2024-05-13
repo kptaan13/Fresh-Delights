@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshPantry Delights - Your Source for Quality Ingredients</title>
+    <link rel="stylesheet" href="sty.css">
+    <script src="scr.js" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Your Order</a></li>
+            <li><a href="#">Your Account</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="menu-container">
+            <button class="menu-btn" onclick="toggleSidebar()">Menu</button>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <img src="Images/logo.png" alt="FreshPantry Delights Logo">
+            </div>
+            <div class="header-content">
+                <h1>Welcome to Fresh Pantry Delights</h1>
+                <p>Your source for fresh, quality ingredients delivered right to your doorstep!</p>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search..." onkeyup="search()">
+                <button onclick="search()">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="meat">
+        <div class="container">
+            <h2 class="text-center">Meat Items</h2>
+            <div class="products">
+                <div class="product">
+                    <a href="PrimeBeefSteak.html" class="product-link">
+                    <img src="Images/PrimeBeefSteak.jpg" alt="Prime Beef Steak">
+                    <p>Prime Beef Steak</p></a>
+                </div>
+
+                <div class="product">
+                    <img src="Images/OrganicChickenBreast.JPG" alt="Organic Chicken Breast">
+                    <p>Organic Chicken Breast</p>
+                </div>
+
+                <div class="product">
+                    <img src="Images/Grass-FedLambChops.JPG" alt="Grass-Fed Lamb Chops">
+                    <p>Grass-Fed Lamb Chops</p>
+                </div>
+
+                <div class="product">
+                    <img src="Images/SmokedPorkRibs.JPG" alt="Smoked Pork Ribs">
+                    <p>Smoked Pork Ribs</p>
+                </div>
+
+                <div class="product">
+                    <img src="Images/TurkeySausages.JPG" alt="Turkey Sausages">
+                    <p>Turkey Sausages</p>
+                </div>
+
+                <!-- Add more products here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="dairy">
+        <div class="container">
+            <h2 class="text-center">Dairy Items</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="Images/Freshfarmmilk.JPG" alt="Fresh Farm Milk">
+                    <p>Fresh Farm Milk</p>
+                </div>
+
+                <div class="product">
+                    <img src="Images/CreamyGreekYogurt.JPG" alt="Creamy Greek Yogurt">
+                    <p>Creamy Greek Yogurt</p>
+                </div>
+
+                <div class="product">
+                    <img src="Images/cheese.JPG" alt="Artisanal Cheese Selection">
+                    <p>Artisanal Cheese Selection</p>
+                </div>
+
+                <div class="product">
+                    <img src="Images/WhippedCream.JPG" alt="Whipped Cream">
+                    <p>Whipped Cream</p>
+                </div>
+
+                <div class="product">
+                    <img src="Images/FlavoredButter.JPG" alt="Flavored Butter">
+                    <p>Flavored Butter</p>
+                </div>
+                <!-- Add more products here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="Fruits">
+        <div class="container">
+            <h2 class="text-center">Fruits</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="Images/JuicyMangoes.JPG" alt="Juicy Mangoes">
+                    <p>Juicy Mangoes</p>
+                </div>
+
+                <div class="product">
+                    <img src="Images/SweetStrawberries.JPG" alt="Sweet Strawberries">
+                    <p>Sweet Strawberries</p>
+                </div>
+
+                <div class="product">
+                    <img src="Images/TangyOranges.JPG" alt="Tangy Oranges">
+                    <p>Tangy Oranges</p>
+                </div>
+
+                <div class="product">
+                    <img src="Images/RipeBananas.JPG" alt="Ripe Bananas">
+                    <p>Ripe Bananas</p>
+                </div>
+
+                <div class="product">
+                    <img src="Images/CrunchyApples.JPG" alt="Crunchy Apples">
+                    <p>Crunchy Apples</p>
+                </div>
+                <!-- Add more products here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="Vegetables">
+        <div class="container">
+            <h2 class="text-center">Vegetables</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="Images/Garden-FreshTomatoes.JPG" alt="Garden-Fresh Tomatoes">
+                    <p>Garden-Fresh Tomatoes</p>
+                </div>
+
+                <div class="product">
+                    <img src="Images/CrispLettuceMix.JPG" alt="Crisp Lettuce Mix">
+                    <p>Crisp Lettuce Mix</p>
+                </div>
+
+                <div class="product">
+                    <img src="Images/ColorfulBellPeppers.JPG" alt="Colorful Bell Peppers">
+                    <p>Colorful Bell Peppers</p>
+                </div>
+
+                <div class="product">
+                    <img src="Images/TenderAsparagusSpears.JPG" alt="Tender Asparagus Spears">
+                    <p>Tender Asparagus Spears</p>
+                </div>
+
+                <div class="product">
+                    <img src="Images/ZestyJalapenos.JPG" alt="Zesty Jalapenos">
+                    <p>Zesty Jalapenos</p>
+                </div>
+                <!-- Add more products here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="snacks">
+        <div class="container">
+            <h2 class="text-center">Snacks</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="Images/GourmetPopcorn.jpg" alt="Gourmet Popcorn">
+                    <p>Gourmet Popcorn</p>
+                </div>
+                <div class="product">
+                    <img src="Images/NuttyTrailMix.jpg" alt="Nutty Trail Mix">
+                    <p>Nutty Trail Mix</p>
+                </div>
+                <div class="product">
+                    <img src="Images/CrispyTortillaChips.jpg" alt="Crispy Tortilla Chips">
+                    <p>Crispy Tortilla Chips</p>
+                </div>
+                <div class="product">
+                    <img src="Images/ChocolateCoveredPretzels.jpg" alt="Chocolate-Covered Pretzels">
+                    <p>Chocolate-Covered Pretzels</p>
+                </div>
+                <div class="product">
+                    <img src="Images/SpicyPotatoChips.jpg" alt="Spicy Potato Chips">
+                    <p>Spicy Potato Chips</p>
+                </div>
+                <!-- Add more products here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="recipes">
+        <div class="container">
+            <h2 class="text-center">Recipes</h2>
+            <div class="recipes">
+                <div class="recipe">
+                    <img src="Images/BeefSteakCreamyMushroomSauce.jpg" alt="Beef Steak Creamy Mushroom Sauce">
+                    <h3>Beef Steak with Creamy Mushroom Sauce</h3>
+                    <p>Grilled prime beef steak topped with a creamy mushroom sauce made with fresh farm milk and artisanal cheese selection.</p>
+                </div>
+                <div class="recipe">
+                    <img src="Images/GreekYogurtChickenSalad.jpg" alt="GreekYogurtChickenSalad">
+                    <h3>Greek Yogurt Chicken Salad</h3>
+                    <p>Grilled organic chicken breast mixed with creamy Greek yogurt and fresh vegetables for a healthy and satisfying salad.</p>
+                </div>
+                <div class="recipe">
+                    <img src="Images/LambChopswithMintSauce.JPG" alt="LambChopsMintSauce">
+                    <h3>Lamb Chops with Mint Sauce</h3>
+                    <p>Grass-fed lamb chops served with a refreshing homemade mint sauce made with fresh mint leaves and lemon.</p>
+                </div>
+                <div class="recipe">
+                    <img src="Images/PorkRibswithBarbecueGlaze.JPG" alt="PorkRibsBarbecueGlaze">
+                    <h3>Pork Ribs with Barbecue Glaze</h3>
+                    <p>Smoked pork ribs glazed with a sweet and tangy barbecue sauce, baked until tender and caramelized.</p>
+                </div>
+                <div class="recipe">
+                    <img src="Images/SausageandCheeseStuffedBellPeppers.JPG" alt="SausageCheeseStuffedBellPeppers">
+                    <h3>Sausage and Cheese Stuffed Bell Peppers</h3>
+                    <p>Turkey sausages stuffed into bell peppers and topped with artisanal cheese selection, baked until bubbly and delicious.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Add sections for other categories -->
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FreshPantry Delights. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>// Function to toggle the sidebar
+        function toggleSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('show');
+        }
+        
+        // Function to hide the sidebar when clicking outside of it
+        document.body.addEventListener('click', function(event) {
+            var sidebar = document.querySelector('.sidebar');
+            if (!event.target.closest('.menu-btn') && !event.target.closest('.sidebar')) {
+                sidebar.classList.remove('show');
+            }
+        });
+         
+    </script>
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '661c0a732e0bffa2c47790c7' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
+</body>
+</html>

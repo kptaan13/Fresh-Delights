@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="intro">
+                <h1>Sign In</h1>
+                <p>Enter your email and password to sign in.</p>
+            </div>
+            <div class="sign-options">
+                <form id="signin-form" action="FreshPantry.html" method="POST">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit" class="btn">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <script>
+        document.getElementById("signin-form").addEventListener("submit", function(event) {
+            // Prevent the default form submission
+            event.preventDefault();
+            
+            // Get the email and password values from the form
+            var email = document.querySelector("#signin-form input[name='email']").value;
+            var password = document.querySelector("#signin-form input[name='password']").value;
+            
+            // Check if the email and password match the expected values
+            if (email === "fresh@gmail.com" && password === "Freshpantry@1") {
+                // Redirect to FreshPantry.html
+                window.location.href = "FreshPantry.html";
+            } else {
+                // Display an error message
+                alert("Invalid email or password. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>

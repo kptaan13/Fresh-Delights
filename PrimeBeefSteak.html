@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Beef Steak - Product Detail</title>
+    <link rel="stylesheet" href="productdesign.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="FreshPantry.html">
+            <img src="Images/logo.png" alt="FreshPantry Delights Logo" class="logo"></a>
+        </div>
+        <div class="header-content">
+            <h1>Product Detail</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-details">
+            <div class="product-image">
+                <img src="Images/PrimeBeefSteak.jpg" alt="Prime Beef Steak">
+            </div>
+            <div class="product-description">
+                <h2>Prime Beef Steak</h2>
+                <p>Introducing our exquisite Prime Beef Steak, a culinary marvel crafted with meticulous attention to detail    and an unwavering commitment to quality. Each succulent slice is masterfully prepared using only the finest ingredients: prime cuts of premium beef, expertly seasoned to perfection with a blend of aromatic spices and herbs. <br>
+
+                Stored in optimal conditions to preserve its freshness and flavor, our Prime Beef Steak is vacuum-sealed to lock in its natural juices and ensure peak quality. Store it in the refrigerator at a temperature between 32°F and 40°F (0°C to 4°C) to maintain its optimal freshness. <br>
+                    
+                Indulge in the decadent tenderness of our Prime Beef Steak, available in a variety of weights to suit your culinary preferences. Whether you prefer a hearty portion for a family feast or a smaller cut for an intimate dinner, our selection offers something for every occasion. Choose from an array of sizes, ranging from 8 ounces to 32 ounces, to create the perfect dining experience. <br>
+                    
+                Elevate your culinary creations with the unparalleled quality and flavor of our Prime Beef Steak. From gourmet grilling sessions to sumptuous steak dinners, each bite promises an unparalleled taste sensation that will leave your taste buds craving more. Experience the epitome of culinary excellence with our Prime Beef Steak, where quality, flavor, and indulgence converge to create an unforgettable dining experience.</p>
+                <!-- Add more product details if needed -->
+            </div>
+            <div class="order-now">
+                <button class="order-btn" onclick="showQuantity('Prime Beef Steak')">Order Now</button>
+                <div class="quantity-selector hidden">
+                    <span>Quantity: </span>
+                    <select class="quantity-dropdown">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                    </select>
+                    <button class="done">Done</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content if needed -->
+    </footer>
+    <script src="order.js"></script>
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '661c0a732e0bffa2c47790c7' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
+</body>
+</html>
